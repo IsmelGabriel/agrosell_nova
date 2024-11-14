@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', Sans-serif;
+    font-weight: 200%;
+}
+
+/* Estilos para pantallas de hasta 768px (típico para tablets y móviles en modo horizontal) */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-title {
+        font-size: 1.8em; /* Ajusta el tamaño del título */
+    }
+
+    .search-bar {
+        flex-direction: column;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .image-info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 90%; /* Reduce el ancho para que quepa mejor en la pantalla */
+    }
+
+    .menu-bar ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .user{
+        flex-direction: column;
+        width: auto;
+        font-size: large;
+    }
+    .login-button{
+        flex-direction: column;
+    }
+}
+
+/* pagina inicio */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.menu-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em; 
+    color: white;
+    font-weight: 700;
+}
+
+/* CD7A10 - 327C28 */
+.top-bar {
+    background-color: #327C28;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    margin-right: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.search-bar button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #23A026;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    justify-content: space-between
+    border: all;
+    border-radius: 5px;
+}
+
+.notification {
+    margin-left: 25px;
+}
+
+.user {
+    margin-left: 15px;
+    font-size: large;
+
+}
+
+.menu-bar {
+    margin: 0 0px;
+    background-color: #22525D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    margin: 0 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.image-info-section {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+.image-text {
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: #26525D;
+    color: white;
+    width: 100%;
+}
+ 
+/* pagina reservas */
+
+.reservas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.cuadro-reservas {
+    background-color: #888b87;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #23A026;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: large;
+}
+
+.reservas-info {
+    margin: 10px;
+    color: white;
+}
+
+/* pagina productos */
+
+.image-info-section {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: center;
+    width: 20;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    align-items: center;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+.image-text {
+    position: relative;
+    bottom: 10px;
+    margin-top: 10%;
+    left: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+/* pagina login */
+
+.login-button{
+    margin-left: 15px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.login-container {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.login-info {
+    background-color: rgb(206, 199, 199);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.login-date{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* pagina sobre nosotros */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: larger;
+    color: #184e5c;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cuadro-about {
+    background-color: #888b87;
+    padding: 35px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 760px;
+}
+
+.about-us-info {
+    margin: 10px;
+    color: rgb(209, 199, 199);
+}
